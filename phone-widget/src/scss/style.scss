@@ -1,0 +1,35 @@
+@import "modules/reset";
+@import "modules/variables";
+@import "@material/typography/mdc-typography";
+@import "@material/ripple/mdc-ripple";
+@import "@material/switch/mdc-switch";
+
+body {
+  width: 340px;
+
+}
+
+#my-extension {
+  font-weight: bold;
+}
+
+.list {
+  padding: 4px 24px;
+}
+
+.list + .list {
+  border-top: 1px solid #efefef;
+}
+
+.list-item {
+  height: 48px;
+
+  > div {
+    line-height: 48px;
+    float: right;
+
+    &.label {
+      float: left;
+    }
+  }
+}

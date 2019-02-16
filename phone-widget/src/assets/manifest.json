@@ -1,0 +1,37 @@
+{
+	"name": "Phone Widget",
+	"version": "1.0.0",
+	"manifest_version": 2,
+	"description": "Phone Widget",
+	"icons": {
+		"16": "images/icon32.png",
+		"32": "images/icon32.png",
+		"48": "images/icon96.png",
+		"96": "images/icon96.png",
+		"128": "images/icon256.png",
+		"256": "images/icon256.png"
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "images/red32.png",
+			"32": "images/red32.png",
+			"48": "images/red96.png",
+			"96": "images/red96.png",
+			"128": "images/red128.png"
+		},
+		"default_title": "Phone Widget",
+		"default_popup": "html/popup.html"
+	},
+	"externally_connectable": {
+		"matches": ["*://WWW.EXAMPLE.ORG/*"],
+		"ids": ["abc..."]
+	},
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": true
+	},
+	"permissions": [
+		"*://*/*",
+		"notifications"
+	]
+}

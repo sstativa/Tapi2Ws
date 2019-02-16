@@ -1,0 +1,19 @@
+{
+	"parser": "babel-eslint",
+	"extends": "airbnb-base",
+	"env": {
+		"browser": true,
+		"jquery": true,
+	},
+	"globals": {
+		"angular": true,
+		"google": true,
+		"chrome": true,
+	},
+	"rules": {
+		"no-param-reassign": [2, { "props": false }],
+		"prefer-arrow-callback": 0,
+		"func-names": [1, "never"],
+		"max-len": ["error", { "code": 180 }]
+	}
+}

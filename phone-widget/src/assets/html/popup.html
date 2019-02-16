@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <script src="../js/mdc.switch.js"></script>
+</head>
+<html>
+<body>
+  <div class="list">
+    <div class="list-item">
+      <div class="label">My extension</div>
+      <div id="my-extension"></div>
+    </div>
+  </div>
+  <div class="list">
+    <div class="list-item">
+      <div class="label"><label for="show-notifications">Show notifications</label></div>
+      <div>
+        <div class="mdc-switch">
+          <div class="mdc-switch__track"></div>
+          <div class="mdc-switch__thumb-underlay">
+            <div class="mdc-switch__thumb">
+              <input type="checkbox" id="show-notifications" class="mdc-switch__native-control" role="switch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="label"><label for="dismiss-internal">Dismiss internal in 10 seconds</label></div>
+      <div>
+        <div class="mdc-switch">
+          <div class="mdc-switch__track"></div>
+          <div class="mdc-switch__thumb-underlay">
+            <div class="mdc-switch__thumb">
+              <input type="checkbox" id="dismiss-internal" class="mdc-switch__native-control" role="switch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="list-item">
+      <div class="label"><label for="dismiss-external">Dismiss external in 60 seconds</label></div>
+      <div>
+        <div class="mdc-switch">
+          <div class="mdc-switch__track"></div>
+          <div class="mdc-switch__thumb-underlay">
+            <div class="mdc-switch__thumb">
+              <input type="checkbox" id="dismiss-external" class="mdc-switch__native-control" role="switch">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../js/popup.js"></script>
+</body>
+</html>
